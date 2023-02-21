@@ -1,0 +1,310 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  width: 100%;
+  height: 100%;
+  padding: 20px max(16px, 8vw);
+  background-color: #FFF7F0;
+}
+
+main header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main header button {
+  border: none;
+  padding: 12px 25px;
+  border-radius: 50px;
+  font-size: max(15px, 1vw);
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  background-color: #030303;
+}
+main header button:hover {
+  background-color: #755CDE;
+}
+
+main .intro {
+  margin-top: max(40px, 5vw);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+main .intro h1 {
+  max-width: 790px;
+  font-size: max(36px, 4vw);
+  font-weight: 700;
+  text-align: center;
+}
+main .intro p {
+  max-width: 770px;
+  font-size: max(14px, 1.5vw);
+  text-align: center;
+}
+
+main .cards {
+  margin-top: 40px;
+  display: grid;
+  grid-template-rows: 180px 180px 180px 160px 160px 160px;
+  gap: 25px;
+}
+main .cards .grid-item {
+  padding: 25px;
+  border-radius: 10px;
+  font-size: 25px;
+  font-weight: 700;
+  color: white;
+  position: relative;
+}
+main .cards .grid-item img {
+  position: absolute;
+  right: 25px;
+}
+main .cards .grid-item h6 {
+  color: white;
+  position: absolute;
+  font-size: 25px;
+  bottom: 25px;
+}
+main .cards #grid-1 {
+  background-color: #755CDE;
+  grid-column: 1/3;
+  grid-row: 1/3;
+}
+main .cards #grid-2 {
+  background-color: #F6A560;
+  grid-column: 1/2;
+}
+main .cards #grid-3 {
+  background-color: #F39E9E;
+  grid-column: 2/3;
+}
+main .cards #grid-4 {
+  background-color: #EB7565;
+  grid-column: 1/3;
+}
+main .cards #grid-5 {
+  background-color: #61C4B7;
+  grid-column: 1/3;
+}
+main .cards #grid-6 {
+  background-color: #552049;
+  grid-column: 1/3;
+}
+
+main .avatar {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  text-align: center;
+}
+main .avatar img {
+  width: 90%;
+  max-width: 400px;
+}
+main .avatar h1 {
+  font-size: max(25px, 3vw);
+  font-weight: 700;
+}
+main .avatar P {
+  color: #7A746E;
+}
+main .avatar button {
+  border: none;
+  padding: 12px 25px;
+  border-radius: 50px;
+  font-size: max(15px, 1vw);
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  background-color: #EB7565;
+}
+main .avatar button:hover {
+  background-color: #F6A560;
+}
+
+main .my-work {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  position: relative;
+  overflow: hidden;
+}
+main .my-work h1 {
+  font-size: max(25px, 3vw);
+}
+main .my-work .slider {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  transition: transform 0.9s ease-out;
+}
+main .my-work .slider img {
+  width: 60%;
+  border-radius: 10px;
+}
+main .my-work .arrows {
+  display: flex;
+  gap: 20px;
+}
+main .my-work .arrows .arrow {
+  padding: 20px;
+  border-radius: 50%;
+  background-color: black;
+  cursor: pointer;
+}
+main .my-work .arrows .arrow:hover {
+  background-color: #755CDE;
+}
+
+main .book {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  text-align: center;
+  margin-top: 100px;
+  padding: 40px 20px;
+  border-radius: 10px;
+  color: #FFF7F0;
+  background-color: #030303;
+}
+main .book h1 {
+  font-size: max(25px, 3vw);
+  color: white;
+}
+main .book p {
+  font-size: max(16px, 1vw);
+  max-width: 560px;
+}
+main .book button {
+  border: none;
+  padding: 12px 25px;
+  border-radius: 50px;
+  font-size: max(15px, 1vw);
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  background-color: #EB7565;
+}
+main .book button:hover {
+  background-color: #F6A560;
+}
+
+main footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+main footer button {
+  border: none;
+  padding: 12px 25px;
+  border-radius: 50px;
+  font-size: max(15px, 1vw);
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  background-color: #030303;
+}
+main footer button:hover {
+  background-color: #755CDE;
+}
+
+@media only screen and (min-width: 768px) {
+  main .cards {
+    grid-template-rows: 180px 180px 180px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  main .cards #grid-2 {
+    grid-column: 3/4;
+  }
+  main .cards #grid-3 {
+    grid-column: 4/5;
+  }
+  main .cards #grid-4 {
+    grid-column: 3/5;
+    grid-row: 2/3;
+  }
+  main .cards #grid-6 {
+    grid-column: 3/5;
+    grid-row: 3/4;
+  }
+  main .avatar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  main .avatar img {
+    position: relative;
+    right: calc(200px - 15vw);
+  }
+  main .avatar .avatar-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    align-items: flex-start;
+    justify-content: space-between;
+    text-align: initial;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  main .cards {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 180px 180px;
+  }
+  main .cards #grid-1 {
+    grid-column: 1/3;
+    grid-row: 1/3;
+  }
+  main .cards #grid-2 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+  main .cards #grid-3 {
+    grid-column: 4/5;
+    grid-row: 1/2;
+  }
+  main .cards #grid-4 {
+    grid-column: 3/5;
+    grid-row: 2/3;
+  }
+  main .cards #grid-5 {
+    grid-column: 5/7;
+    grid-row: 1/2;
+  }
+  main .cards #grid-6 {
+    grid-column: 5/7;
+    grid-row: 2/3;
+  }
+  main .book {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  main .book .book-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    align-items: flex-start;
+  }
+}/*# sourceMappingURL=styles.css.map */
